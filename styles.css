@@ -1,0 +1,73 @@
+
+*
+body{
+    background-color: rgb(187, 187, 187);
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+.container{
+    max-width: 70%;
+    margin: auto;
+    background-color: rgb(224, 225, 225);
+    border-radius: 30px;
+}
+.applicationForm{
+    padding: 50px;
+    width: 60%;
+    margin: auto;
+}
+.form-group{
+    width: 50%;
+    padding: 5px;
+    margin: auto; 
+}
+input{
+    padding: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid rgb(187, 187, 187);
+    background-color: rgb(187, 187, 187);
+    
+}
+label{
+    padding: 8px;
+    font-family: 'Oswald', sans-serif;
+    
+
+}
+.submit{
+    width: 100px;
+    border: solid rgb(224, 225, 225);
+    cursor: pointer;
+    border-radius: 10px;
+    margin: auto;
+    
+}
+.submitfull{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px
+}
+.submit:hover{
+    width: 120px;
+    height: 40px;
+}
+@media only screen and (max-width: 750px){
+    .container{
+        width: 90%;
+        margin: auto;
+    }
+    .applicationForm{
+        width: 80%;
+        margin: auto;
+    }
+    .form-group{
+        margin: auto;
+    }
+    .submit{
+        text-align: center;
+    }
+}
