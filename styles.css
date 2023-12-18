@@ -6,16 +6,17 @@ body{
 h1{
     font-family: 'Oswald', sans-serif;
     text-align: center;
+    padding: 15px;
+    margin: 8px;
 }
-.container{
+
+.applicationForm{
     max-width: 70%;
+    padding: 30px;
     margin: auto;
     background-color: rgb(224, 225, 225);
     border-radius: 30px;
-}
-.applicationForm{
-    padding: 50px;
-    width: 60%;
+    
     margin: auto;
 }
 .form-group{
@@ -25,7 +26,7 @@ h1{
 }
 input{
     padding: 5px;
-    width: 100%;
+    width: 90%;
     margin-bottom: 10px;
     border-radius: 10px;
     border: solid rgb(187, 187, 187);
@@ -35,37 +36,33 @@ input{
 label{
     padding: 8px;
     font-family: 'Oswald', sans-serif;
-    
-
 }
-.submit{
+
+.submitfull{
     width: 100px;
     border: solid rgb(224, 225, 225);
     cursor: pointer;
     border-radius: 10px;
+    padding: 5px;
     margin: auto;
+}
+.submit:hover,.submit:focus{
+    width: 100px;
+    transition: 1s;
+    transition-timing-function: ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
-.submitfull{
+.outer_submit{
+    height: 30px;
+    margin: 10px;
     padding: 10px;
-    text-align: center;
-    margin-bottom: 10px
-}
-.submit:hover{
-    width: 120px;
-    height: 40px;
 }
 @media only screen and (max-width: 600px){
-    .container{
-        width: 100%;
-        padding: 10px;
-        margin: auto;
-    }
+    
     .applicationForm{
         width: 100%;
-        padding:10px;
         margin: auto;
-       
     }
     .form-group{
         width: 50%;
@@ -81,5 +78,6 @@ label{
     }
     .submit{
         text-align: center;
+        
     }
 }
