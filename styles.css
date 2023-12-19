@@ -49,7 +49,7 @@ label{
 .submit:hover,.submit:focus{
     width: 100px;
     transition: 1s;
-    transition-timing-function: ease;
+    transition-timing-function: ease-in-out;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 }
@@ -61,29 +61,33 @@ label{
 @media only screen and (max-width: 600px){
     
     .applicationForm{
+        padding: 30px;
         width: 100%;
         margin: auto;
-        text-align: center;
+        
     }
     .form-group{
-        width: 50%;
+
+        width: 100%;
         padding: 5px;
         margin: auto;
     }
     label{
         width: 100%;
-    }
-    input{
-        width: 100%;
-        margin: auto;
-    }
-    .submit{
-        text-align: center;
-        
-    }
-    *{
-        transition: 1.5s;
-        transition-timing-function: ease;
+        margin-bottom: 10px;
     }
     
+    
+    input{
+        border-radius: 0;
+        background-color:  rgb(187, 187, 187);
+        border-radius: 20px;
+      
+        padding: 8px;
+        margin: auto;
+        border: none;
+    }
+    .submit{
+        text-align: center;   
+    }
 }
